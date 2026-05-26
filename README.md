@@ -1,22 +1,38 @@
-# Soroban Project
+# SariSplit
 
-## Project Structure
+Instant community bill splitting on Stellar.
 
-This repository uses the recommended structure for a Soroban project:
+## Problem
 
-```text
-.
-├── contracts
-│   └── hello_world
-│       ├── src
-│       │   ├── lib.rs
-│       │   └── test.rs
-│       └── Cargo.toml
-├── Cargo.toml
-└── README.md
-```
+Jeepney drivers and neighborhood organizers in Metro Manila lose money because passengers and buyers forget to send their split payments.
 
-- New Soroban contracts can be put in `contracts`, each in their own directory. There is already a `hello_world` contract in there to get you started.
-- If you initialized this project with any other example contracts via `--with-example`, those contracts will be in the `contracts` directory as well.
-- Contracts should have their own `Cargo.toml` files that rely on the top-level `Cargo.toml` workspace for their dependencies.
-- Frontend libraries can be added to the top-level directory as well. If you initialized this project with a frontend template via `--frontend-template` you will have those files already included.
+## Solution
+
+Passengers contribute USDC into a Soroban-powered payment pool that automatically releases funds once the target amount is reached.
+
+## Timeline
+
+- Week 1: Smart contract
+- Week 2: Frontend integration
+- Week 3: Testnet deployment
+- Week 4: Demo polish
+
+## Stellar Features Used
+
+- USDC transfers
+- Soroban smart contracts
+- Trustlines
+
+## Vision and Purpose
+
+Enable instant micro-settlement for everyday shared expenses in low-income communities.
+
+## Prerequisites
+
+- Rust stable
+- Soroban CLI v22
+
+## Build
+
+```bash
+soroban contract build
