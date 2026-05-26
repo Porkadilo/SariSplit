@@ -2,6 +2,11 @@
 
 Instant community bill splitting on Stellar.
 
+## Contract deployment
+contract id: CCQOKYXUYBL5GDOK43J7CU26JXP626KYXVIMQUVP6JQYW75ZZ4QD36HM
+
+![SariSplit Contract](SariSplit.png)
+
 ## Problem
 
 Jeepney drivers and neighborhood organizers in Metro Manila lose money because passengers and buyers forget to send their split payments.
@@ -35,4 +40,7 @@ Enable instant micro-settlement for everyday shared expenses in low-income commu
 ## Build
 
 ```bash
-soroban contract build
+
+
+
+
